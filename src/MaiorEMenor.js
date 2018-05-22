@@ -16,7 +16,7 @@ class MaiorEMenor {
     pegaMaior() {
 
         //return this._numerosSaida.pop();
-        //return [].concat(this._numerosSaida).pop();
+        return [].concat(this._numerosSaida).pop();
         //return this._numerosSaida.reverse()[0];
     }
 

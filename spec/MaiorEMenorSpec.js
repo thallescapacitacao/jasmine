@@ -1,4 +1,4 @@
-describe("Maior e Menor", function() {
+describe("Maior e Menor", () => {
 
     it("deve entender números em ordem não sequencial", () => {
 
@@ -38,5 +38,15 @@ describe("Maior e Menor", function() {
 
         expect(algoritmo.pegaMaior()).toEqual(undefined);
         expect(algoritmo.pegaMenor()).toEqual(undefined);
+    });
+
+    it("deve funcionar com apenas 1 elemento", () => {
+
+        var algoritmo = new MaiorEMenor();
+
+        algoritmo.encontra(5);
+
+        expect(algoritmo.pegaMaior()).toEqual(5);
+        expect(algoritmo.pegaMenor()).toEqual(5);
     });
 });
