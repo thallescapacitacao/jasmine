@@ -18,6 +18,12 @@ class PacienteBuilder {
         );
     }
 
+    comNome(valor) {
+
+        this._nome = valor;
+        return this;
+    }
+
     comIdade(valor) {
 
         this._idade = valor;

@@ -5,10 +5,17 @@ describe('Consulta', () => {
     beforeEach(() => {
 
         thalles = new PacienteBuilder()
+            .comNome('José')
             .comIdade(31)
             .comAltura(1.80)
             .comPeso(86)
             .constroi();
+    });
+
+    afterEach(() => {
+
+        //útil em testes de integração
+
     });
 
     describe('consultas do tipo retorno', () => {
